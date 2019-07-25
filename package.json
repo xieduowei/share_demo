@@ -1,0 +1,28 @@
+{
+  "name": "share_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "readline": "node ./readline/index.js",
+    "commander": "node ./commander/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xieduowei/share_demo.git"
+  },
+  "author": "duowei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xieduowei/share_demo/issues"
+  },
+  "homepage": "https://github.com/xieduowei/share_demo#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cli-table2": "^0.2.0",
+    "colors": "^1.3.3",
+    "commander": "^2.20.0",
+    "superagent": "^5.1.0"
+  }
+}

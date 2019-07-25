@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MVVM</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="a.b">
+        <input type="text" v-model="a.c">
+        <p>{{getSum}}</p>
+        <button v-on:click="clickBtn">改变</button>
+    </div>
+
+    <script src="./vues/vue-dsx.js"></script>
+    <script>
+        var vm = new Vues({
+            el: '#app',
+            data: {
+                a:{
+					b:1,
+					c:2
+				}
+            },
+
+            computed: {
+                getSum: function () {
+                    return this.a.b - this.a.c;
+                }
+            },
+
+            methods: {
+                clickBtn: function (e) {
+					console.log(this)
+                    this.a.b++
+                    this.a.c++
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
